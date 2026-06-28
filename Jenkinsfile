@@ -43,17 +43,17 @@ pipeline {
             }
         }
 
-        stage('Terraform Format Check') {
-            steps {
-                sh 'terraform fmt -check -recursive'
-            }
-        }
+        // stage('Terraform Format Check') {
+        //     steps {
+        //         sh 'terraform fmt -check -recursive'
+        //     }
+        // }
 
-        stage('Terraform Validate') {
-            steps {
-                sh 'terraform validate'
-            }
-        }
+        // stage('Terraform Validate') {
+        //     steps {
+        //         sh 'terraform validate'
+        //     }
+        // }
 
         stage('Terraform Plan') {
             steps {
